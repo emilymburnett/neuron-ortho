@@ -2561,4 +2561,170 @@ Wire Wire Line
 	6600 2000 6700 2000
 Wire Wire Line
 	6600 2700 6700 2700
+Text GLabel 3250 1800 0    50   Input ~ 0
+NRST
+Wire Wire Line
+	3350 1800 3250 1800
+Wire Wire Line
+	3250 2000 3350 2000
+Text GLabel 3250 2200 0    50   Input ~ 0
+XTAL1
+Text GLabel 3250 2300 0    50   Input ~ 0
+XTAL2
+Wire Wire Line
+	3250 2200 3350 2200
+Wire Wire Line
+	3350 2300 3250 2300
+Text GLabel 4800 4000 2    50   BiDi ~ 0
+D-
+Text GLabel 4800 4100 2    50   BiDi ~ 0
+D+
+Text GLabel 3250 2500 0    50   Input ~ 0
+COL0
+Text GLabel 3250 2600 0    50   Input ~ 0
+COL1
+Text GLabel 3250 2700 0    50   Input ~ 0
+COL2
+Text GLabel 2600 3100 0    50   Input ~ 0
+ROW0
+Text GLabel 2600 3200 0    50   Input ~ 0
+ROW1
+Text GLabel 2600 3300 0    50   Input ~ 0
+ROW2
+Text GLabel 2600 3400 0    50   Input ~ 0
+ROW3
+Text GLabel 4850 2450 2    50   Input ~ 0
+COL3
+Text GLabel 4850 2600 2    50   Input ~ 0
+COL4
+Text GLabel 4850 2750 2    50   Input ~ 0
+COL5
+Text GLabel 4850 2900 2    50   Input ~ 0
+COL6
+Text GLabel 4850 3050 2    50   Input ~ 0
+COL7
+Text GLabel 4850 3200 2    50   Input ~ 0
+COL8
+Text GLabel 4850 3350 2    50   Input ~ 0
+COL9
+Text GLabel 4850 3500 2    50   Input ~ 0
+COL10
+Text GLabel 4850 3650 2    50   Input ~ 0
+COL11
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5E796914
+P 1350 6550
+F 0 "#PWR?" H 1350 6600 20  0001 C CNN
+F 1 "GND" H 1350 6609 30  0000 C CNN
+F 2 "" H 1350 6550 60  0000 C CNN
+F 3 "" H 1350 6550 60  0000 C CNN
+	1    1350 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5E79741B
+P 2300 6200
+F 0 "#PWR?" H 2300 6250 20  0001 C CNN
+F 1 "GND" H 2300 6259 30  0000 C CNN
+F 2 "" H 2300 6200 60  0000 C CNN
+F 3 "" H 2300 6200 60  0000 C CNN
+	1    2300 6200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1350 6250 2    50   Input ~ 0
+5V
+Text GLabel 1350 6350 2    50   Input ~ 0
+SDA
+Text GLabel 1350 6450 2    50   Input ~ 0
+SCL
+Text GLabel 2300 6300 2    50   Input ~ 0
+NRST
+Text GLabel 2300 6400 2    50   Input ~ 0
+BOOT0
+Text GLabel 2300 6500 2    50   Input ~ 0
+SWDIO
+Text GLabel 2300 6600 2    50   Input ~ 0
+SWCLK
+Text GLabel 2300 6700 2    50   Input ~ 0
+3.3V
+Text GLabel 2250 7250 2    50   Input ~ 0
+Extra5
+Text GLabel 2250 7350 2    50   Input ~ 0
+Extra6
+Text GLabel 2250 7450 2    50   Input ~ 0
+Extra7
+Text GLabel 2250 7550 2    50   Input ~ 0
+Extra8
+Text GLabel 1300 7200 2    50   Input ~ 0
+Extra1
+Text GLabel 1300 7300 2    50   Input ~ 0
+Extra2
+Text GLabel 1300 7400 2    50   Input ~ 0
+Extra3
+Text GLabel 1300 7500 2    50   Input ~ 0
+Extra4
+Wire Wire Line
+	1200 6250 1350 6250
+Wire Wire Line
+	1200 6350 1350 6350
+Wire Wire Line
+	1200 6450 1350 6450
+Wire Wire Line
+	1200 6550 1350 6550
+Wire Wire Line
+	2150 6200 2300 6200
+Wire Wire Line
+	2150 6300 2300 6300
+Wire Wire Line
+	2150 6400 2300 6400
+Wire Wire Line
+	2150 6500 2300 6500
+Wire Wire Line
+	2150 6600 2300 6600
+Wire Wire Line
+	2150 6700 2300 6700
+Wire Wire Line
+	1200 7200 1300 7200
+Wire Wire Line
+	1200 7300 1300 7300
+Wire Wire Line
+	1200 7400 1300 7400
+Wire Wire Line
+	1200 7500 1300 7500
+Wire Wire Line
+	2150 7250 2250 7250
+Wire Wire Line
+	2150 7350 2250 7350
+Wire Wire Line
+	2150 7450 2250 7450
+Wire Wire Line
+	2150 7550 2250 7550
+Text GLabel 3250 2000 0    50   Input ~ 0
+BOOT0
+Text GLabel 4950 4250 2    50   Input ~ 0
+SWDIO
+Text GLabel 4950 4400 2    50   Input ~ 0
+SWCLK
+Text GLabel 4850 3800 2    50   Input ~ 0
+SDA
+Text GLabel 4850 3900 2    50   Input ~ 0
+SCL
+Text GLabel 2650 3650 0    50   Input ~ 0
+Extra1
+Text GLabel 2650 3800 0    50   Input ~ 0
+Extra2
+Text GLabel 2350 4000 2    50   Input ~ 0
+Extra3
+Text GLabel 2350 4100 2    50   Input ~ 0
+Extra4
+Text GLabel 2350 4200 2    50   Input ~ 0
+Extra5
+Text GLabel 2350 4300 2    50   Input ~ 0
+Extra6
+Text GLabel 2350 4400 2    50   Input ~ 0
+Extra7
+Text GLabel 2350 4500 2    50   Input ~ 0
+Extra8
 $EndSCHEMATC

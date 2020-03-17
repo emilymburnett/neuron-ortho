@@ -252,48 +252,6 @@ F 3 "~" H 1950 6400 50  0001 C CNN
 	1    1950 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 7050 3350 7050
-Wire Wire Line
-	4050 7050 4200 7050
-Wire Wire Line
-	3700 7050 3850 7050
-Wire Wire Line
-	4100 6550 4150 6550
-Wire Wire Line
-	3500 6050 3350 6050
-Wire Wire Line
-	2900 6550 3100 6550
-Text GLabel 4200 7050 2    50   BiDi ~ 0
-D-
-$Comp
-L Device:R_Small R7
-U 1 1 5E777318
-P 3950 7050
-F 0 "R7" H 4050 6950 50  0000 R CNN
-F 1 "22R" V 3950 7100 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3950 7050 50  0001 C CNN
-F 3 "~" H 3950 7050 50  0001 C CNN
-	1    3950 7050
-	0    -1   -1   0   
-$EndComp
-Text GLabel 3350 6050 0    50   BiDi ~ 0
-D+Bus
-Text GLabel 3350 7050 0    50   BiDi ~ 0
-D-Bus
-Text GLabel 4350 6550 2    50   Input ~ 0
-VBUS
-$Comp
-L keyboard_parts:GND #PWR020
-U 1 1 5E772B04
-P 2900 6550
-F 0 "#PWR020" H 2900 6600 20  0001 C CNN
-F 1 "GND" V 2900 6579 30  0000 L CNN
-F 2 "" H 2900 6550 60  0000 C CNN
-F 3 "" H 2900 6550 60  0000 C CNN
-	1    2900 6550
-	0    1    1    0   
-$EndComp
 $Comp
 L MCU_ST_STM32F3:STM32F303C6Tx U1
 U 1 1 5E6E2385
@@ -332,7 +290,7 @@ L Device:C_Small C9
 U 1 1 5E7B1424
 P 5450 5800
 F 0 "C9" H 5542 5846 50  0000 L CNN
-F 1 "100n" H 5542 5755 50  0000 L CNN
+F 1 "10u" H 5542 5755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5450 5800 50  0001 C CNN
 F 3 "~" H 5450 5800 50  0001 C CNN
 	1    5450 5800
@@ -343,32 +301,10 @@ L Device:C_Small C10
 U 1 1 5E7B2534
 P 6050 5800
 F 0 "C10" H 6142 5846 50  0000 L CNN
-F 1 "100n" H 6142 5755 50  0000 L CNN
+F 1 "10u" H 6142 5755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6050 5800 50  0001 C CNN
 F 3 "~" H 6050 5800 50  0001 C CNN
 	1    6050 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR017
-U 1 1 5E7B3157
-P 5200 5750
-F 0 "#PWR017" H 5200 5800 20  0001 C CNN
-F 1 "GND" H 5200 5650 30  0000 C CNN
-F 2 "" H 5200 5750 60  0000 C CNN
-F 3 "" H 5200 5750 60  0000 C CNN
-	1    5200 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D1
-U 1 1 5E7B385C
-P 5750 4950
-F 0 "D1" H 5750 5155 50  0000 C CNN
-F 1 "1N4007" H 5750 5064 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" V 5750 4950 50  0001 C CNN
-F 3 "~" V 5750 4950 50  0001 C CNN
-	1    5750 4950
 	1    0    0    -1  
 $EndComp
 Text GLabel 4800 5350 0    50   Input ~ 0
@@ -388,8 +324,6 @@ Wire Wire Line
 	4800 5350 4900 5350
 Wire Wire Line
 	5100 5350 5200 5350
-Wire Wire Line
-	5200 5350 5200 5500
 Connection ~ 5200 5350
 Wire Wire Line
 	5200 5350 5450 5350
@@ -415,15 +349,7 @@ Wire Wire Line
 	6000 5900 6050 5900
 Wire Wire Line
 	6050 5700 6050 5350
-Wire Wire Line
-	6050 5350 6050 4950
-Wire Wire Line
-	6050 4950 5850 4950
 Connection ~ 6050 5350
-Wire Wire Line
-	5650 4950 5450 4950
-Wire Wire Line
-	5450 4950 5450 5350
 Text GLabel 6350 5350 2    50   Output ~ 0
 3.3V
 Wire Wire Line
@@ -538,8 +464,6 @@ F 3 "~" H 5250 7200 50  0001 C CNN
 	1    5250 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4950 7000 0    50   Input ~ 0
-3.3V
 Text GLabel 6400 7000 2    50   BiDi ~ 0
 BOOT0
 Text GLabel 5100 6600 0    50   BiDi ~ 0
@@ -578,48 +502,6 @@ Wire Wire Line
 	6250 7300 6250 7400
 Wire Wire Line
 	5050 7000 4950 7000
-Wire Wire Line
-	5200 5700 5200 5750
-$Comp
-L Device:D_Schottky_Small DF1
-U 1 1 5E6F97CE
-P 5200 5600
-F 0 "DF1" V 5150 5400 50  0000 L CNN
-F 1 "RB060M-60TR" V 5250 5000 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 5200 5600 50  0001 C CNN
-F 3 "~" V 5200 5600 50  0001 C CNN
-	1    5200 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small CUSB1
-U 1 1 5E7015F0
-P 4150 6700
-F 0 "CUSB1" H 4242 6746 50  0000 L CNN
-F 1 "4.7n" H 4242 6655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4150 6700 50  0001 C CNN
-F 3 "~" H 4150 6700 50  0001 C CNN
-	1    4150 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR022
-U 1 1 5E701F7F
-P 4150 6900
-F 0 "#PWR022" H 4150 6950 20  0001 C CNN
-F 1 "GND" H 4150 6959 30  0000 C CNN
-F 2 "" H 4150 6900 60  0000 C CNN
-F 3 "" H 4150 6900 60  0000 C CNN
-	1    4150 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 6600 4150 6550
-Connection ~ 4150 6550
-Wire Wire Line
-	4150 6550 4350 6550
-Wire Wire Line
-	4150 6800 4150 6900
 $Comp
 L Device:Crystal_GND24_Small Y1
 U 1 1 5E70D294
@@ -1243,17 +1125,6 @@ F 1 "MX-NoLED" H 6283 2699 20  0000 C CNN
 F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5625 2525 60  0001 C CNN
 F 3 "" H 5625 2525 60  0001 C CNN
 	1    6250 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX25
-U 1 1 5E753E5D
-P 5800 2550
-F 0 "MX25" H 5833 2773 60  0000 C CNN
-F 1 "MX-NoLED" H 5833 2699 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5175 2525 60  0001 C CNN
-F 3 "" H 5175 2525 60  0001 C CNN
-	1    5800 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2248,12 +2119,6 @@ Text GLabel 1350 6450 2    50   Input ~ 0
 SCL
 Text GLabel 2300 6300 2    50   Input ~ 0
 NRST
-Text GLabel 2300 6400 2    50   Input ~ 0
-BOOT0
-Text GLabel 2300 6500 2    50   Input ~ 0
-SWDIO
-Text GLabel 2300 6600 2    50   Input ~ 0
-SWCLK
 Text GLabel 2300 6700 2    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -2507,34 +2372,6 @@ Wire Wire Line
 Connection ~ 6100 3750
 Wire Wire Line
 	6100 3750 6100 4200
-$Comp
-L Power_Protection:USBLC6-2SC6 U3
-U 1 1 5E771176
-P 3600 6550
-F 0 "U3" V 3554 7094 50  0000 L CNN
-F 1 "USBLC6-2SC6" V 3645 7094 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2850 6950 50  0001 C CNN
-F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 3800 6900 50  0001 C CNN
-	1    3600 6550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3700 6050 3850 6050
-$Comp
-L Device:R_Small R6
-U 1 1 5E774FC3
-P 3950 6050
-F 0 "R6" H 4050 5950 50  0000 R CNN
-F 1 "22R" V 3950 6100 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3950 6050 50  0001 C CNN
-F 3 "~" H 3950 6050 50  0001 C CNN
-	1    3950 6050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4200 6050 4050 6050
-Text GLabel 4200 6050 2    50   BiDi ~ 0
-D+
 NoConn ~ 3350 3900
 NoConn ~ 3350 3200
 NoConn ~ 3350 3100
@@ -2552,4 +2389,61 @@ NoConn ~ 4650 3500
 NoConn ~ 4650 3600
 Text GLabel 4650 4400 2    50   Input ~ 0
 SDA
+Text GLabel 6100 4800 2    50   BiDi ~ 0
+D+
+Wire Wire Line
+	6100 4800 5950 4800
+$Comp
+L Device:R_Small R6
+U 1 1 5E774FC3
+P 5850 4800
+F 0 "R6" H 5950 4700 50  0000 R CNN
+F 1 "22R" V 5850 4850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 4800 50  0001 C CNN
+F 3 "~" H 5850 4800 50  0001 C CNN
+	1    5850 4800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2300 6600 2    50   Input ~ 0
+SWCLK
+Text GLabel 2300 6500 2    50   Input ~ 0
+SWDIO
+Text GLabel 2300 6400 2    50   Input ~ 0
+BOOT0
+Text GLabel 4950 7000 0    50   Input ~ 0
+3.3V
+Text GLabel 5600 4950 0    50   BiDi ~ 0
+D-Bus
+Text GLabel 5600 4800 0    50   BiDi ~ 0
+D+Bus
+$Comp
+L Device:R_Small R7
+U 1 1 5E777318
+P 5850 4950
+F 0 "R7" H 5950 4850 50  0000 R CNN
+F 1 "22R" V 5850 5000 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 4950 50  0001 C CNN
+F 3 "~" H 5850 4950 50  0001 C CNN
+	1    5850 4950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6100 4950 2    50   BiDi ~ 0
+D-
+Wire Wire Line
+	5950 4950 6100 4950
+Wire Wire Line
+	5600 4800 5750 4800
+Wire Wire Line
+	5600 4950 5750 4950
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX25
+U 1 1 5E753E5D
+P 5800 2550
+F 0 "MX25" H 5833 2773 60  0000 C CNN
+F 1 "MX-NoLED" H 5833 2699 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5175 2525 60  0001 C CNN
+F 3 "" H 5175 2525 60  0001 C CNN
+	1    5800 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

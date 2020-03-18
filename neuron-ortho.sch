@@ -2349,7 +2349,6 @@ Wire Wire Line
 	6100 3750 6100 4200
 NoConn ~ 3350 3200
 NoConn ~ 4650 3200
-NoConn ~ 2100 8550
 NoConn ~ 3350 3300
 NoConn ~ 3350 3400
 NoConn ~ 3350 3500

@@ -253,17 +253,6 @@ F 3 "~" H 1950 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_ST_STM32F3:STM32F303C6Tx U1
-U 1 1 5E6E2385
-P 4050 3100
-F 0 "U1" H 4000 1511 50  0000 C CNN
-F 1 "STM32F303C6Tx" H 4000 1420 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 3450 1700 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 4050 3100 50  0001 C CNN
-	1    4050 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:NCP1117-3.3_SOT223 U2
 U 1 1 5E7ADA03
 P 5750 5350
@@ -2147,24 +2136,10 @@ Text GLabel 3350 3700 0    50   Input ~ 0
 SWDIO
 Text GLabel 3350 3800 0    50   Input ~ 0
 SWCLK
-Text GLabel 4650 4300 2    50   Input ~ 0
+Text GLabel 3350 3100 0    50   Input ~ 0
 SCL
 Text GLabel 4050 1200 3    50   BiDi ~ 0
 3.3V
-Wire Wire Line
-	4250 1600 4150 1600
-Connection ~ 3850 1600
-Wire Wire Line
-	3850 1600 3750 1600
-Connection ~ 3950 1600
-Wire Wire Line
-	3950 1600 3850 1600
-Connection ~ 4050 1600
-Wire Wire Line
-	4050 1600 3950 1600
-Connection ~ 4150 1600
-Wire Wire Line
-	4150 1600 4050 1600
 Wire Wire Line
 	4050 1200 4050 1050
 Wire Wire Line
@@ -2372,9 +2347,7 @@ Wire Wire Line
 Connection ~ 6100 3750
 Wire Wire Line
 	6100 3750 6100 4200
-NoConn ~ 3350 3900
 NoConn ~ 3350 3200
-NoConn ~ 3350 3100
 NoConn ~ 4650 3200
 NoConn ~ 4850 2050
 NoConn ~ 5100 1000
@@ -2387,7 +2360,7 @@ NoConn ~ 4650 3300
 NoConn ~ 4650 3400
 NoConn ~ 4650 3500
 NoConn ~ 4650 3600
-Text GLabel 4650 4400 2    50   Input ~ 0
+Text GLabel 3350 3900 0    50   Input ~ 0
 SDA
 Text GLabel 6100 4800 2    50   BiDi ~ 0
 D+
@@ -2446,4 +2419,32 @@ F 3 "" H 5175 2525 60  0001 C CNN
 	1    5800 2550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4250 1600 4150 1600
+Connection ~ 4150 1600
+Wire Wire Line
+	4150 1600 4050 1600
+Connection ~ 4050 1600
+Wire Wire Line
+	4050 1600 3950 1600
+Connection ~ 3950 1600
+Wire Wire Line
+	3950 1600 3850 1600
+Wire Wire Line
+	3850 1600 3750 1600
+Connection ~ 3850 1600
+$Comp
+L MCU_ST_STM32F3:STM32F303C6Tx U1
+U 1 1 5E6E2385
+P 4050 3100
+F 0 "U1" H 4000 1511 50  0000 C CNN
+F 1 "STM32F303C6Tx" H 4000 1420 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 3450 1700 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 4050 3100 50  0001 C CNN
+	1    4050 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 2700
+NoConn ~ 4650 4400
+NoConn ~ 4650 4300
 $EndSCHEMATC

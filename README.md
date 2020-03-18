@@ -1,7 +1,5 @@
-# neuron-ortho
-Zeph's first pcb
+# Zen - an ortho PCB designed for the Neuron
 
-Making an ortho PCB that supports 7u spacebar and is compatible with the Neuron case.
+Zephyraeon's first PCB, not even sure it's functional yet so use at your own risk.
 
-
-Haven't added license yet but no warranty that this will work, feel free to use it for whatever. Currently it's not finished but do whatever you want with what's there.
+Any feedback welcome, very willing to learn :)

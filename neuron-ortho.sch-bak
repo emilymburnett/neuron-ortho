@@ -231,23 +231,12 @@ Wire Wire Line
 Wire Wire Line
 	2300 2350 2400 2350
 $Comp
-L Connector:Conn_01x04_Male J2
-U 1 1 5E754717
-P 1000 6350
-F 0 "J2" H 1108 6631 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1108 6540 50  0000 C CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical" H 1000 6350 50  0001 C CNN
-F 3 "~" H 1000 6350 50  0001 C CNN
-	1    1000 6350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x06_Male J3
 U 1 1 5E75566D
 P 1950 6400
 F 0 "J3" H 2058 6781 50  0000 C CNN
 F 1 "Conn_01x06_Male" H 2058 6690 50  0000 C CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical" H 1950 6400 50  0001 C CNN
+F 2 "random-keyboard-parts:Reset_Pretty" H 1950 6400 50  0001 C CNN
 F 3 "~" H 1950 6400 50  0001 C CNN
 	1    1950 6400
 	1    0    0    -1  
@@ -2081,34 +2070,34 @@ COL11
 $Comp
 L keyboard_parts:GND #PWR0101
 U 1 1 5E796914
-P 1350 6550
-F 0 "#PWR0101" H 1350 6600 20  0001 C CNN
-F 1 "GND" H 1350 6609 30  0000 C CNN
-F 2 "" H 1350 6550 60  0000 C CNN
-F 3 "" H 1350 6550 60  0000 C CNN
-	1    1350 6550
+P 1350 6750
+F 0 "#PWR0101" H 1350 6800 20  0001 C CNN
+F 1 "GND" H 1350 6809 30  0000 C CNN
+F 2 "" H 1350 6750 60  0000 C CNN
+F 3 "" H 1350 6750 60  0000 C CNN
+	1    1350 6750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L keyboard_parts:GND #PWR0102
 U 1 1 5E79741B
-P 2300 6200
-F 0 "#PWR0102" H 2300 6250 20  0001 C CNN
-F 1 "GND" H 2300 6259 30  0000 C CNN
-F 2 "" H 2300 6200 60  0000 C CNN
-F 3 "" H 2300 6200 60  0000 C CNN
-	1    2300 6200
+P 2300 6700
+F 0 "#PWR0102" H 2300 6750 20  0001 C CNN
+F 1 "GND" H 2300 6759 30  0000 C CNN
+F 2 "" H 2300 6700 60  0000 C CNN
+F 3 "" H 2300 6700 60  0000 C CNN
+	1    2300 6700
 	0    -1   -1   0   
 $EndComp
 Text GLabel 1350 6250 2    50   Input ~ 0
 5V
-Text GLabel 1350 6350 2    50   Input ~ 0
-SDA
 Text GLabel 1350 6450 2    50   Input ~ 0
+SDA
+Text GLabel 1350 6650 2    50   Input ~ 0
 SCL
 Text GLabel 2300 6300 2    50   Input ~ 0
 NRST
-Text GLabel 2300 6700 2    50   Input ~ 0
+Text GLabel 2300 6600 2    50   Input ~ 0
 3.3V
 Wire Wire Line
 	1200 6250 1350 6250
@@ -2117,7 +2106,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 6450 1350 6450
 Wire Wire Line
-	1200 6550 1350 6550
+	1200 6750 1350 6750
 Wire Wire Line
 	2150 6200 2300 6200
 Wire Wire Line
@@ -2348,12 +2337,9 @@ Connection ~ 6100 3750
 Wire Wire Line
 	6100 3750 6100 4200
 NoConn ~ 3350 3200
-NoConn ~ 4650 3200
-NoConn ~ 2100 8550
 NoConn ~ 3350 3300
 NoConn ~ 3350 3400
 NoConn ~ 3350 3500
-NoConn ~ 4650 3300
 NoConn ~ 4650 3400
 NoConn ~ 4650 3500
 NoConn ~ 4650 3600
@@ -2372,11 +2358,11 @@ F 3 "~" H 5850 4800 50  0001 C CNN
 	1    5850 4800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2300 6600 2    50   Input ~ 0
+Text GLabel 2300 6400 2    50   Input ~ 0
 SWCLK
 Text GLabel 2300 6500 2    50   Input ~ 0
 SWDIO
-Text GLabel 2300 6400 2    50   Input ~ 0
+Text GLabel 2300 6200 2    50   Input ~ 0
 BOOT0
 Text GLabel 4950 7000 0    50   Input ~ 0
 3.3V
@@ -2445,4 +2431,27 @@ NoConn ~ 4650 4400
 NoConn ~ 4650 4300
 NoConn ~ 4650 2900
 NoConn ~ 3350 2500
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 5E763C45
+P 1000 6450
+F 0 "J2" H 1108 6831 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 1108 6740 50  0000 C CNN
+F 2 "random-keyboard-parts:Reset_Pretty" H 1000 6450 50  0001 C CNN
+F 3 "~" H 1000 6450 50  0001 C CNN
+	1    1000 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 6550 2    50   Input ~ 0
+Extra1
+Text GLabel 1350 6350 2    50   Input ~ 0
+Extra2
+Wire Wire Line
+	1200 6550 1350 6550
+Wire Wire Line
+	1200 6650 1350 6650
+Text GLabel 4650 3200 2    50   Input ~ 0
+Extra1
+Text GLabel 4650 3300 2    50   Input ~ 0
+Extra2
 $EndSCHEMATC

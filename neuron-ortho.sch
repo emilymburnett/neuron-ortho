@@ -2046,7 +2046,7 @@ Text GLabel 3350 3000 0    50   BiDi ~ 0
 D-
 Text GLabel 3350 2900 0    50   BiDi ~ 0
 D+
-Text GLabel 4650 2900 2    50   Input ~ 0
+Text GLabel 3350 2700 0    50   Input ~ 0
 COL0
 Text GLabel 3350 4000 0    50   Input ~ 0
 COL1
@@ -2058,7 +2058,7 @@ Text GLabel 4650 3000 2    50   Input ~ 0
 ROW1
 Text GLabel 3350 2600 0    50   Input ~ 0
 ROW2
-Text GLabel 3350 2500 0    50   Input ~ 0
+Text GLabel 3350 3600 0    50   Input ~ 0
 ROW3
 Text GLabel 3350 4200 0    50   Input ~ 0
 COL3
@@ -2068,15 +2068,15 @@ Text GLabel 3350 4400 0    50   Input ~ 0
 COL5
 Text GLabel 4650 3700 2    50   Input ~ 0
 COL6
-Text GLabel 4650 3800 2    50   Input ~ 0
+Text GLabel 4650 4200 2    50   Input ~ 0
 COL7
-Text GLabel 4650 3900 2    50   Input ~ 0
+Text GLabel 4650 4100 2    50   Input ~ 0
 COL8
 Text GLabel 4650 4000 2    50   Input ~ 0
 COL9
-Text GLabel 4650 4100 2    50   Input ~ 0
+Text GLabel 4650 3900 2    50   Input ~ 0
 COL10
-Text GLabel 4650 4200 2    50   Input ~ 0
+Text GLabel 4650 3800 2    50   Input ~ 0
 COL11
 $Comp
 L keyboard_parts:GND #PWR0101
@@ -2132,9 +2132,9 @@ Wire Wire Line
 	2150 6700 2300 6700
 Text GLabel 3250 2000 0    50   Input ~ 0
 BOOT0
-Text GLabel 3350 3700 0    50   Input ~ 0
-SWDIO
 Text GLabel 3350 3800 0    50   Input ~ 0
+SWDIO
+Text GLabel 3350 3700 0    50   Input ~ 0
 SWCLK
 Text GLabel 3350 3100 0    50   Input ~ 0
 SCL
@@ -2349,19 +2349,14 @@ Wire Wire Line
 	6100 3750 6100 4200
 NoConn ~ 3350 3200
 NoConn ~ 4650 3200
-NoConn ~ 4850 2050
-NoConn ~ 5100 1000
 NoConn ~ 2100 8550
 NoConn ~ 3350 3300
 NoConn ~ 3350 3400
 NoConn ~ 3350 3500
-NoConn ~ 3350 3600
 NoConn ~ 4650 3300
 NoConn ~ 4650 3400
 NoConn ~ 4650 3500
 NoConn ~ 4650 3600
-Text GLabel 3350 3900 0    50   Input ~ 0
-SDA
 Text GLabel 6100 4800 2    50   BiDi ~ 0
 D+
 Wire Wire Line
@@ -2444,7 +2439,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    4050 3100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3350 2700
+Text GLabel 3350 3900 0    50   Input ~ 0
+SDA
 NoConn ~ 4650 4400
 NoConn ~ 4650 4300
+NoConn ~ 4650 2900
+NoConn ~ 3350 2500
 $EndSCHEMATC
